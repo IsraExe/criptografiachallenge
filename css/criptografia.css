@@ -112,6 +112,7 @@ label {
     border: solid;
     border-width: 1px;
     border-color: rgb(40, 177, 219);
+    margin-bottom: 20px;
 }
 
 .boxmensagem > img {
