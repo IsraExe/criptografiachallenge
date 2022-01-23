@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    /* text-decoration: overline; */
+    color: rgb(40, 177, 219);
+    color: rgb(70, 65, 65);
+    font-family: cursive;
+}
+
+.separar-em-dois {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    /* background-color: yellowgreen; */
+}
+
+.boxescrever {
+    margin-right: 70px;
+    margin-top: 40px;
+    display: flex;
+}
+
+.boxescrever > form > textarea {
+    height: 300px;
+    width: 500px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(40, 177, 219);
+    border-radius: 10px;
+    padding-top: 5px;
+    margin-bottom: 40px;
+    font-size: 22px;
+    color: #0A3871;
+    padding-left: 5px;
+}
+
+.boxescrever > form > textarea::placeholder {
+    color: #0A3871;
+}
+
+textarea:focus, input:focus {
+    outline: 0;
+}
+
+.boxescrever > form > input {
+    width: 247px;
+    height: 50px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: rgb(40, 177, 219);
+    align-self: center;
+    margin-top: 5px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.boxescrever > form > input:first-of-type {
+   background-color: #0A3871;
+   color: white;
+}
+
+.boxescrever > form > input:first-of-type:hover {
+    background-color: #132a47;
+}
+
+.boxescrever > form > input:first-of-type:active {
+    background-color: #162436;
+}
+
+.boxescrever > form > input:last-of-type {
+    background-color: #D8DFE8;
+}
+
+.boxescrever > form > input:last-of-type:hover {
+    background-color: #bed1e9;
+}
+
+.boxescrever > form > input:last-of-type:active {
+    background-color: #adc3dd;
+}
+label {
+    font-size: 12px;
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 3px;
+}
+
+.boxmensagem {
+    width: 350px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 10px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(40, 177, 219);
+}
+
+.boxmensagem > img {
+    /* display: flex; */
+    margin-top: 90px;
+    margin-bottom: 10px;
+}
+
+.boxmensagem > b, p {
+    text-align: center;
+}
+
+.boxmensagem > p {
+    font-size: 15px;
+}
+
+
+.boxmensagem > textarea {
+    height: 450px;
+    width: 330px;
+    border-radius: 20px;
+    align-self: center;
+    margin-top: 5px;
+    padding-left: 7px;
+    padding-top: 15px;
+    display: none;
+    font-size: 20px;
+}
+
+.boxmensagem > input {
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: transparent;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(40, 177, 219);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
+}
+
+.boxmensagem > input:hover {
+    background-color: rgba(8, 190, 245, 0.315);
+}
+
+.boxmensagem > input:active {
+    background-color: rgba(37, 150, 185, 0.445);
+}
+
+@media (max-width:1000px) {
+    .boxescrever > form > textarea {
+        width: 400px;
+        font-size: 21px;
+    }
+
+    .boxescrever > form > input {
+        width: 195px;
+    }
+}
+
+@media (max-width:875px) {
+    .boxescrever > form > textarea {
+        width: 350px;
+        margin-right: 0px;
+    }
+
+    .boxescrever > form > input {
+        width: 170px;
+    }
+    .boxmensagem {
+        width: 300px;
+        height: 550px;
+        margin-left: 0px;
+    }
+
+    .boxmensagem > b {
+        font-size: 15px;
+    }
+    .boxmensagem > p {
+        font-size: 14px;
+    }
+
+    .boxmensagem > textarea {
+        height: 450px;
+        width: 270px;
+    }
+    .boxmensagem > input {
+        height: 50px;
+        width: 240px;
+    }
+}
+
+@media (max-width: 755px) {
+    h1 {
+        margin-bottom: 0px;
+    }
+
+    .boxescrever {
+        width: 370px;
+        height: 300px;
+        align-self: center;
+        margin-right: 0px;
+        margin-bottom: 15px; 
+        margin-left: 10px;
+    }
+
+    .boxmensagem {
+        margin-top: 40px;
+        width: 370px;
+        height: 300px;
+        border-radius: 10px;   
+        margin-right: 10px;
+    }
+
+    .boxmensagem > img {
+        align-self: center;
+        margin-top: 0px;
+        width: 250px;
+        height: 350px;
+    }
+
+    .boxmensagem > textarea {
+        font-size: 18px;
+    }
+
+    .boxescrever > form > textarea {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 735px) { 
+    .boxmensagem {
+        margin-right: 10px;
+        margin-left: 2px;
+    }
+
+    .boxescrever {
+        margin-left: 10px;
+        margin-right: 2px;
+    }
+    .boxescrever > form > textarea {
+        font-size: 16px;
+    }
+    .boxmensagem > b {
+        font-size: 14px;
+    }
+    .boxmensagem > p {
+        font-size: 12px;
+    }
+    .boxmensagem > img {
+        margin-bottom: 0px;
+        width: 200;
+        height: 300;
+    }
+    .boxmensagem > input {
+        margin-bottom: 15px;
+        height: 60px;
+        width: 210px;
+    }
+    .boxmensagem > textarea {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 625px) {
+
+    .boxmensagem {
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 100px;
+        align-self: center;
+        width: 350px;
+    }
+
+    .boxescrever {
+        margin-left: 0px;
+        margin-right: 0px;
+        align-self: center;
+        justify-content: center;
+    }
+    .separar-em-dois {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boxescrever > form > textarea {
+        margin-bottom: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}
+
+
+@media (max-width:415px) {
+    h1 {
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+
+    .boxescrever {
+        justify-content: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 270px;
+    }
+
+    .boxescrever > form > textarea {
+        width: 250px;
+        margin-bottom: 10px;
+    }
+
+    .boxescrever > form > input {
+        width: 123px;
+    }
+
+    .boxmensagem {
+        width: 250px;
+    }
+
+    .boxmensagem > textarea {
+        width: 210px;
+    }
+}
+
+@media (max-width:375px) {
+    h1 {
+        font-size: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .boxmensagem {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .boxescrever {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}
