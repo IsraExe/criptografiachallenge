@@ -4,10 +4,23 @@ window.onload = function() {
     document.querySelector("#btn-copy").onclick = copiarTexto
 }
 
+const htmlTag = document.querySelector('html')
+const btnDarkMode = document.querySelector('#atv-dark')
+btnDarkMode.addEventListener('click', function() {
+    htmlTag.classList.toggle('dark-mode')
+    if (htmlTag.classList == 'dark-mode') {
+        btnDarkMode.textContent = 'Light mode'
+    } else {
+        btnDarkMode.textContent = 'Dark mode'
+    }
+    
+})
+
+
 criptografarAgora = function() {
     event.preventDefault()
     let valorCampo = document.getElementById('texto-inserido').value // envelopa valor do input na variável
-    valorCampo = valorCampo.replace(/e/g, "enter") // expressão regular para que todas as letras "o" sejam substituídas
+    valorCampo = valorCampo.replace(/e/g, "enter") // expressão regular para que todas as letras "e" sejam substituídas
     valorCampo = valorCampo.replace(/i/g, "imes")
     valorCampo = valorCampo.replace(/a/g, "ai")
     valorCampo = valorCampo.replace(/o/g, "ober") 
