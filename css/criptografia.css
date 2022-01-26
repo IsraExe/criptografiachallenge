@@ -438,6 +438,9 @@ label {
 }
 
 @media (max-width:375px) {
+    #atv-dark { 
+        width: 80px;
+    }
     .div-btn {
         top: -45px;
     }
