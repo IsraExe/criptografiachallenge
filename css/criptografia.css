@@ -439,16 +439,17 @@ label {
 
 @media (max-width:375px) {
     #atv-dark { 
-        width: 80px;
+        width: 100px;
     }
     .div-btn {
         top: -45px;
     }
     h1 {
-        margin-top: 15px;
+        margin-top: 30px;
         font-size: 20px;
         margin-left: 0px;
         margin-right: 0px;
+        margin-bottom: 10px;
     }
     .boxmensagem {
         margin-left: 0px;
