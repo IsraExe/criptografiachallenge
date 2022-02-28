@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criptografia</title>
+  <link rel="stylesheet" href="css/criptografia.css">
+
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <h1>   Sistema de Criptografia </h1>
+
+  <div class="div-btn">
+    <span>Change to</span> <button id="atv-dark">Dark Mode</button>
+  </div>
+
+  <div class="separar-em-dois">
+
+    <section class="form boxescrever">
+      <form action="" id="formcriptografia">
+        <textarea name="" id="texto-inserido" cols="30" rows="10" placeholder="Digite ou cole seu texto aqui..."></textarea> <br>
+        <img src="assets/icon.svg" alt="">
+        <label for="input-texto">Não utilize acentos.</label> <br>
+        <input class="btn" type="submit" value="Criptografar!" id="btn-cripto">
+        <input class="btn" type="submit" value="Descriptografar!" id="btn-descripto" form="formcriptografia">
+      </form>
+    </section>
+  
+    <section class="msg boxmensagem">
+      <img src="assets/High quality products 1 1.svg" alt="" id="img-vazio">
+      <b id="bold-text">Nenhuma mensagem encontrada</b>
+      <p id="paragrafo-text">Digite um texto que você deseja criptografar ou descriptografar.</p>
+      <textarea name="" id="texto-codificado" cols="30" rows="10"></textarea> <br>
+      <input class="btn" type="submit" value="Copiar" id="btn-copy">
+    </section>
+
+  </div>
+
+  
+</body>
+</html>
