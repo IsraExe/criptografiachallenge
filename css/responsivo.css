@@ -1,0 +1,82 @@
+@media (max-width: 1024px) {
+    .separar-em-dois {
+        width: 100%;
+    }
+
+    .boxescrever {
+        width: 50%;
+    }
+
+    .boxmensagem {
+        width: 40%;
+    }
+}
+
+@media (max-width:801px) {
+
+    h1 {
+        font-size: 22px;
+    }
+
+    #atv-dark { 
+        position: relative;
+        top: -40px;
+        position: absolute;
+        top: 25px;
+    } 
+
+    .div-btn > span {
+        display: none;
+    }
+
+    .separar-em-dois {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxescrever {
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    .boxescrever > form > textarea {
+        margin-bottom: 10px;
+    }
+
+    .boxmensagem {
+        width: 70%;
+    }
+
+}
+
+@media (max-width:600px) {
+    #atv-dark { 
+        position: relative;
+        margin-left: 0px;
+        align-self: center;
+        top: 0;
+    }  
+
+    .div-btn {
+        padding-right: 0px;
+    }
+
+    .boxmensagem {
+        height: 450px;
+    }
+}
+
+@media (max-width:480px) {
+    .boxescrever > form > input {
+        width: 48%;
+        font-size: 12px;
+    }
+
+    .boxescrever {
+        width: 85%;
+    }
+
+    .boxmensagem {
+        width: 85%;
+    }
+}
