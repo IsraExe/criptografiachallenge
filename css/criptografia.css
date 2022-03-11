@@ -179,8 +179,10 @@ textarea:focus, input:focus {
     margin-bottom: 20px;
     margin-top: 10px;
 }
-
-.boxmensagem > b, p {
+.boxmensagem > #bold-text {
+    font-weight: 600;
+}
+.boxmensagem > #bold-text, p {
     text-align: center;
     color: var(--text-color);
 }
